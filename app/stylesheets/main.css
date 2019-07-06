@@ -1,0 +1,152 @@
+@import './tachyons/tachyons.css';
+
+:root {
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-family-serif: Georgia, 'Times New Roman', Times, serif;
+  --font-family-monospace: Menlo, Monaco, Consolas, 'Liberation Mono',
+    'Courier New', monospace;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-family: val(--font-family-monospace);
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Disable the hover interaction when disabled. */
+button[disabled].dim {
+  opacity: 0.5;
+  transition: opacity 0.15s ease-in;
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.cf {
+  clear: both;
+}
+
+.cf-4th:nth-child(4n) {
+  margin-right: 0;
+  clear: both;
+}
+
+.p-fix:nth-child(3n) {
+  padding-right: 0;
+  margin-right: 0;
+}
+
+.ma4 {
+  margin: var(--spacing-extra-large);
+}
+
+footer {
+  text-align: center;
+  opacity: 0.5;
+}
+
+footer a {
+  text-decoration: none;
+  color: #24292e;
+}
+
+footer svg {
+  position: relative;
+  top: 5px;
+  fill: white;
+}
+
+svg.red {
+}
+/*** CODE MIRROR OVERRIDES ***/
+
+textarea {
+  background: transparent;
+}
+
+.CodeMirror {
+  border: 1px solid #fff;
+  border-radius: 0.25em;
+  margin-bottom: 1.25em;
+  font-size: 16px;
+  line-height: 24px;
+  min-height: 330px;
+  height: 330px;
+  display: block;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.CodeMirror pre {
+  padding: 0px 15px;
+}
+
+.CodeMirror-line {
+  padding: 15px 5px;
+}
+
+.CodeMirror-code {
+  padding: 15px 1x;
+}
+
+.CodeMirror.cm-s-night .cm-comment {
+  color: var(--light-blue);
+}
+
+.CodeMirror.cm-s-night .CodeMirror-linenumber {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* Make form match Code Mirror */
+input[type='text'] {
+  background: #0a001f;
+  color: #37f14a;
+  border-color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0.25em;
+  font-family: monospace;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+}
+
+.fill-creativity {
+  color: #f2308b;
+}
+
+.fill-red {
+  color: #f2308b;
+}
+
+/*
+Code  Pen style
+<style id="cm-font-family" class="cm-font-family">
+  
+  .CodeMirror,
+  .console-logs .console-line,
+  .console-command-line-input,
+  .console-message,
+  .CodeMirror-hint {
+    font-family: Monaco, MonoSpace;
+  }
+</style>
+<style id="cm-font-size">
+  .CodeMirror,
+  .console-logs .console-line,
+  .console-command-line-input,
+  .console-message,
+  .CodeMirror-hint {
+    font-size: 15px;
+  }
+</style>
+
+*/

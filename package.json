@@ -1,0 +1,20 @@
+{
+  "name": "gh-template-vanilla-webapp",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build app/index.html --no-cache",
+    "start": "parcel app/index.html --no-cache",
+    "pretest": "standard",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matthew Hudson <matthud@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "1.12.3",
+    "standard": "12.0.1",
+    "tachyons": "4.11.1"
+  },
+  "dependencies": {}
+}
